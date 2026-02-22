@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">Nishant Mathur<span class="accent">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#register">Enroll</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ============ HERO — 3-Layer Parallax ============ -->
+    <section class="hero" id="hero">
+        <div class="parallax-layer layer-sky" data-speed="0.15"></div>
+        <div class="parallax-layer layer-mountains" data-speed="0.3"></div>
+        <div class="hero-content" data-speed="0.5">
+            <p class="hero-eyebrow">WELCOME TO OUR PORTAL</p>
+            <h1 class="hero-title">Student<br><span class="accent">Registration Form</span></h1>
+            <p class="hero-sub">Begin your academic journey — enroll today and unlock a world of opportunities.</p>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+        <div class="parallax-layer layer-fog" data-speed="0.05"></div>
+    </section>
+
+    <!-- ============ ABOUT — Reveal on Scroll ============ -->
+    <section class="section section-about" id="about">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-text reveal-left">
+                    <p class="section-label">01 / ABOUT</p>
+                    <h2 class="section-heading">Your Path to <span class="accent">Enrollment</span></h2>
+                    <p class="section-body">
+                        Our <strong>Student Registration Form</strong> is designed to make your enrollment
+                        process seamless and straightforward. Whether you're a <strong>first-year applicant</strong>
+                        or a <strong>returning student</strong>, the form guides you through every step — from
+                        selecting your preferred course to submitting your personal details securely.
+                    </p>
+                    <p class="section-body">
+                        Choose from a wide range of <strong>undergraduate and postgraduate programs</strong>
+                        across multiple departments. Our registration system ensures your data is handled
+                        with care, giving you a smooth start to your academic journey.
+                    </p>
+                </div>
+                <div class="section-visual reveal-right">
+                    <div class="stats-card">
+                        <div class="stat">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">Courses Offered</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="12">0</span>
+                            <span class="stat-label">Departments</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="98">0</span>
+                            <span class="stat-label">% Placement Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ GALLERY — Student Success Stories ============ -->
+    <section class="section section-gallery" id="gallery">
+        <div class="container">
+            <p class="section-label center">02 / SUCCESS STORIES</p>
+            <h2 class="section-heading center">Our Alumni, Their <span class="accent">Achievements</span></h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-card" data-parallax-card="-30">
+                    <div class="card-image"
+                        style="background-image:url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80')">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Priya Sharma</h3>
+                        <p>Class of 2022 · Software Engineer at Google</p>
+                    </div>
+                </div>
+                <div class="gallery-card" data-parallax-card="20">
+                    <div class="card-image"
+                        style="background-image:url('https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80')">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Arjun Patel</h3>
+                        <p>Class of 2021 · Data Scientist at Microsoft</p>
+                    </div>
+                </div>
+                <div class="gallery-card" data-parallax-card="-15">
+                    <div class="card-image"
+                        style="background-image:url('https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80')">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Ananya Desai</h3>
+                        <p>Class of 2023 · UX Designer at Apple</p>
+                    </div>
+                </div>
+                <div class="gallery-card" data-parallax-card="35">
+                    <div class="card-image"
+                        style="background-image:url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80')">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Rahul Mehta</h3>
+                        <p>Class of 2020 · Product Manager at Amazon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ QUOTE — Full-width Parallax Divider ============ -->
+    <section class="parallax-divider">
+        <div class="divider-bg" data-speed="0.35"
+            style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80')">
+        </div>
+        <div class="divider-content">
+            <blockquote>
+                "Design is really an act of communication,<br>
+                which means having a deep understanding of the person<br>
+                <span class="accent">with whom the designer is communicating."</span>
+            </blockquote>
+            <p class="quote-author">— Don Norman</p>
+        </div>
+    </section>
+
+    <!-- ============ REGISTRATION FORM ============ -->
+    <section class="section section-form" id="register">
+        <div class="container">
+            <p class="section-label center">03 / ENROLL NOW</p>
+            <h2 class="section-heading center">Student <span class="accent">Registration</span></h2>
+
+            <form class="reg-form reveal-up" id="registrationForm" novalidate>
+                <!-- Personal Details -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name <span class="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" placeholder="e.g. Priya" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name <span class="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" placeholder="e.g. Sharma" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth <span class="required">*</span></label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender <span class="required">*</span></label>
+                        <div class="custom-select" data-name="gender">
+                            <input type="hidden" name="gender" id="gender" required>
+                            <div class="select-trigger">
+                                <span class="select-value" data-placeholder="Select gender">Select gender</span>
+                                <svg class="select-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="select-dropdown">
+                                <div class="select-option" data-value="male">Male</div>
+                                <div class="select-option" data-value="female">Female</div>
+                                <div class="select-option" data-value="other">Other</div>
+                                <div class="select-option" data-value="prefer-not">Prefer not to say</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="form-divider">
+
+                <!-- Contact Information -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                    </div>
+                </div>
+
+                <div class="form-row full">
+                    <div class="form-group">
+                        <label for="address">Address <span class="required">*</span></label>
+                        <textarea id="address" name="address" rows="3" placeholder="Enter your full address"
+                            required></textarea>
+                    </div>
+                </div>
+
+                <hr class="form-divider">
+
+                <!-- Academic Preferences -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Department <span class="required">*</span></label>
+                        <div class="custom-select" data-name="department">
+                            <input type="hidden" name="department" id="department" required>
+                            <div class="select-trigger">
+                                <span class="select-value" data-placeholder="Select department">Select department</span>
+                                <svg class="select-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="select-dropdown">
+                                <div class="select-option" data-value="cs">Computer Science</div>
+                                <div class="select-option" data-value="ee">Electrical Engineering</div>
+                                <div class="select-option" data-value="me">Mechanical Engineering</div>
+                                <div class="select-option" data-value="ce">Civil Engineering</div>
+                                <div class="select-option" data-value="ba">Business Administration</div>
+                                <div class="select-option" data-value="design">Design &amp; Media</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Course <span class="required">*</span></label>
+                        <div class="custom-select" data-name="course">
+                            <input type="hidden" name="course" id="course" required>
+                            <div class="select-trigger">
+                                <span class="select-value" data-placeholder="Select course">Select course</span>
+                                <svg class="select-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="select-dropdown">
+                                <div class="select-option" data-value="btech">B.Tech</div>
+                                <div class="select-option" data-value="mtech">M.Tech</div>
+                                <div class="select-option" data-value="bba">BBA</div>
+                                <div class="select-option" data-value="mba">MBA</div>
+                                <div class="select-option" data-value="bdes">B.Des</div>
+                                <div class="select-option" data-value="mdes">M.Des</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="form-divider">
+
+                <!-- Agreement & Submit -->
+                <div class="form-row full">
+                    <div class="form-check">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#" class="form-link">Terms & Conditions</a> and <a
+                                href="#" class="form-link">Privacy Policy</a></label>
+                    </div>
+                </div>
+
+                <div class="form-row full center">
+                    <button type="submit" class="cta-button">Submit Registration</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============ COURSE TABLE ============ -->
+    <section class="section section-courses" id="courses">
+        <div class="container">
+            <p class="section-label center">04 / PROGRAMMES</p>
+            <h2 class="section-heading center">Available <span class="accent">Courses</span></h2>
+
+            <div class="table-wrapper reveal-up">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Duration</th>
+                            <th>Fee (₹)</th>
+                            <th>Trainer</th>
+                            <th>Mode</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>B.Tech — Computer Science</strong></td>
+                            <td>4 Years</td>
+                            <td>2,40,000</td>
+                            <td>Dr. Ananya Rao</td>
+                            <td><span class="mode-badge online">Online</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>M.Tech — AI & ML</strong></td>
+                            <td>2 Years</td>
+                            <td>1,80,000</td>
+                            <td>Prof. Vikram Singh</td>
+                            <td><span class="mode-badge hybrid">Hybrid</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>BBA — Business Admin</strong></td>
+                            <td>3 Years</td>
+                            <td>1,50,000</td>
+                            <td>Dr. Meera Joshi</td>
+                            <td><span class="mode-badge offline">Offline</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>MBA — Finance</strong></td>
+                            <td>2 Years</td>
+                            <td>3,20,000</td>
+                            <td>Prof. Arjun Patel</td>
+                            <td><span class="mode-badge online">Online</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>B.Des — UX Design</strong></td>
+                            <td>4 Years</td>
+                            <td>2,00,000</td>
+                            <td>Ms. Priya Nair</td>
+                            <td><span class="mode-badge hybrid">Hybrid</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>M.Des — Interaction Design</strong></td>
+                            <td>2 Years</td>
+                            <td>1,60,000</td>
+                            <td>Dr. Rahul Mehta</td>
+                            <td><span class="mode-badge offline">Offline</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-logo">Nishant Mathur<span class="accent">.</span></p>
+            <p class="footer-copy">© 2026 — Crafted at 60fps</p>
+        </div>
+    </footer>
+
+
+    <!-- ============ CONFIRMATION MODAL ============ -->
+    <div class="confirm-overlay" id="confirmOverlay">
+        <div class="confirm-modal">
+            <div class="confirm-icon">✓</div>
+            <h3 class="confirm-title">Registration <span class="accent">Successful!</span></h3>
+            <p class="confirm-msg">Thank you for registering. We'll send a confirmation email with your enrollment
+                details shortly.</p>
+            <button class="cta-button confirm-close" id="confirmClose">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
